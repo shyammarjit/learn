@@ -55,6 +55,7 @@ class PatchEmbed(nn.Module):
         torch.Tensor
             Shape `(n_samples, n_patches, embed_dim)`.
         """
+        print("patch_embedding")
         x = self.proj(
                 x
             )  # (n_samples, embed_dim, n_patches ** 0.5, n_patches ** 0.5)
